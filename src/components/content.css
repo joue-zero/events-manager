@@ -1,0 +1,29 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .event{
+    flex : 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #666;
+    width: fit-content;
+}
+.content .event h3{
+    margin-top: 0;
+}
+.content .event .info{
+    display: flex;
+    justify-content: space-between;
+}
+.content .event .info span {
+    white-space: nowrap; /* Prevent line breaks within spans */
+}
+
+/* put line after the info  for all info div not last child */
+.content .event .info:not(:last-child){
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
